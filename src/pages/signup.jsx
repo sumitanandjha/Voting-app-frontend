@@ -17,7 +17,7 @@ function SignupForm() {
       // Send form data to the backend API
       console.log({ username, email, password, userType });
       const response = await axios.post(
-        "https://vote-app-backend.vercel.app/auth/signup",
+        "https://vote-app-backend-dh8ei3z4o-sumit-anands-projects.vercel.app//auth/signup",
         {
           username,
           email,

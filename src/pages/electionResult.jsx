@@ -16,7 +16,7 @@ const ElectionResult = () => {
     const fetchElectionDetails = async () => {
       try {
         const response = await axios.get(
-          `https://vote-app-backend.vercel.app/election/${id}`
+          `https://vote-app-backend-dh8ei3z4o-sumit-anands-projects.vercel.app//election/${id}`
         );
         setElection(response.data);
       } catch (err) {

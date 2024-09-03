@@ -16,7 +16,7 @@ const ElectionDetailsPage = () => {
     const fetchElectionDetails = async () => {
       try {
         const response = await axios.get(
-          `https://vote-app-backend.vercel.app/election/${id}`
+          `https://vote-app-backend-dh8ei3z4o-sumit-anands-projects.vercel.app//election/${id}`
         );
         const electionData = response.data;
         setElection(electionData);
@@ -43,7 +43,7 @@ const ElectionDetailsPage = () => {
   const handleVote = async () => {
     try {
       const response = await axios.post(
-        `https://vote-app-backend.vercel.app/cast/${id}`,
+        `https://vote-app-backend-dh8ei3z4o-sumit-anands-projects.vercel.app//cast/${id}`,
         { party: selectedParty },
         {
           headers: {

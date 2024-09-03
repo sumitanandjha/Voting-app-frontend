@@ -23,7 +23,7 @@ const CreateElectionForm = ({ onClose, onSuccess }) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "https://vote-app-backend.vercel.app/root/elections",
+        "https://vote-app-backend-dh8ei3z4o-sumit-anands-projects.vercel.app//root/elections",
         {
           title,
           description,
