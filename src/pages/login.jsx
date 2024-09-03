@@ -209,12 +209,12 @@ const Login = () => {
           email,
           password,
         },
-        {
-          withCredentials: true,
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+        // {
+        //   withCredentials: true,
+        //   headers: {
+        //     "Content-Type": "application/json",
+        //   },
+        // }
       );
       console.log(response.data);
       // Handle successful login (e.g., redirect to dashboard)
