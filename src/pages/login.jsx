@@ -191,11 +191,14 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   // State variables to store form inputs
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   // Handle form submission
   const handleLogin = async (e) => {
@@ -218,6 +221,8 @@ const Login = () => {
       );
       console.log(response.data);
       // Handle successful login (e.g., redirect to dashboard)
+      toast.success("Login Successfull");
+      navigate("/");
     } catch (error) {
       console.error(error);
       // Handle error (e.g., display error message)
