@@ -208,9 +208,12 @@ const Login = () => {
         {
           email,
           password,
-        },{
-          withCredentials:true,
-          "Content-Type":"application/json"
+        },
+        {
+          withCredentials: true,
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
       );
       console.log(response.data);
@@ -220,7 +223,7 @@ const Login = () => {
       // Handle error (e.g., display error message)
     }
   };
-
+  
   return (
     <>
       <div className="flex min-h-screen w-screen items-center justify-center text-gray-600 bg-gray-50">
