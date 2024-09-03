@@ -14,7 +14,7 @@ function UserDashboard() {
     const fetchElections = async () => {
       try {
         const response = await axios.get(
-          "https://vote-app-backend.vercel.app//all/info"
+          "https://vote-app-backend.vercel.app/all/info"
         );
         const elections = response.data;
 
