@@ -208,6 +208,9 @@ const Login = () => {
         {
           email,
           password,
+        },{
+          withCredentials:true,
+          "Content-Type":"application/json"
         }
       );
       console.log(response.data);
