@@ -204,7 +204,7 @@ const Login = () => {
       console.log({ email, password });
       // Send form data to the backend API
       const response = await axios.post(
-        "https://vote-app-backend-634d.onrender.com/api/login",
+        "https://vote-app-backend-634d.onrender.com/auth/login",
         {
           email,
           password,
