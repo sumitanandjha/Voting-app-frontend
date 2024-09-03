@@ -222,7 +222,7 @@ const Login = () => {
       console.log(response.data);
       // Handle successful login (e.g., redirect to dashboard)
       toast.success("Login Successfull");
-      navigate("/");
+      navigate("/user-dashboard");
     } catch (error) {
       console.error(error);
       // Handle error (e.g., display error message)
